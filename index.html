@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+  <head>
+    <title>Third Eye Camera Store </title>
+
+    <style>
+            *{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            #cart > img {
+                width: 100px;
+            }
+
+
+        
+
+            #cart{
+                background-color: hsl(36, 87%, 31%);
+                height: 38vh;
+            }
+
+            #cart-title{
+                color: white;
+                text-align: center;
+                padding: 10px;
+
+            }
+
+            #cart-icon{
+                margin: 20px;
+                width: 140px;
+            }
+
+            #list{
+                margin: 40px;
+            }
+
+            #cameras{
+              display: flex;
+              background-color: #EDEDED;
+              justify-content: center;
+            }
+
+            .camera{
+              width: 20vw;
+              height: 400px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background-color: #FFFFFF;
+              padding: 1rem;
+              margin: 1rem;
+              text-align: center;
+            }
+
+            .camera > img{
+              width:  15vw;
+            }
+
+            #header-title{
+                text-align: center;
+                background-color: #5a0505;
+                color: white;
+                padding: 15px;
+            }
+
+            .camera > button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: #252539;
+                border: none;
+                color: #FFFFFF;
+                padding: 10px;
+                cursor: pointer;
+                bottom: 0px;
+                border-radius: 5px;
+            }
+
+            #list > li {
+              color: #FFFFFF;
+            }
+
+            #cart-container{
+                display: flex;
+            }
+
+            #cart-icon{
+              color: #FFFFFF;
+            }
+
+            #cart-close-button{
+                width: 1.5rem; 
+                padding-left: 10px; 
+            }
+            .btn{
+                margin-top: 150px;
+            }
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1 id = "header-title">Cameras</h1>
+    <div id = "cameras">
+        <div class = "camera">
+          <img src = "media/cam-1.jpeg">
+          <h3>Canon EOS 5D Mark IV </h3>
+          <button class="btn">ADD TO CART</button>
+        </div>
+
+        <div class = "camera">
+          <img src="media/cam-2.jpeg">
+          <h3>Canon EOS 6D Mark II   </h3>
+          <button class="btn">ADD TO CART</button>
+        </div>
+
+        <div class = "camera">
+          <img src="media/cam-3.jpeg">
+          <h3>Nikon D7500  </h3>
+          <button class="btn">ADD TO CART</button>
+        </div>
+
+        <div class = "camera">
+          <img src="media/cam-4.jpeg">
+          <h3>Nikon D780  </h3>
+          <button class="btn">ADD TO CART</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div id = "cart">
+        <h1 id = "cart-title">Cart</h1>
+        <div id="cart-container">
+          <img id = "cart-icon" src="media/cart 1.png">
+          <div>
+            <ol id = "list">
+                <li><strong>Canon EOS 5D Mark IV DSLR Camera</strong><img src = "media/close button.png" id="cart-close-button"/></li>
+                <li><strong>Nikon D7500 DSLR Camera</strong><img src = "media/close button.png" id="cart-close-button"/></li>
+            </ol>
+          </div>
+        </div>
+    </div>
+
+  </body>
+</html>
